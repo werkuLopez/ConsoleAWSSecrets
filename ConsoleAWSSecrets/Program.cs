@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 
 Console.WriteLine("----------------- SECRETS---------");
+Console.WriteLine(HelperSecretManager.GetEnvironmentVariable("us-east-1"));
+/*
 Console.WriteLine("");
 string mySecret = await HelperSecretManager.GetSecretAsync();
 Console.WriteLine(mySecret);
@@ -31,4 +33,7 @@ Console.WriteLine(conn);
 var test = proveedor.GetService<Test>();
 Console.WriteLine("API: " + test.GetValue());
 Console.WriteLine("");
+
+Console.WriteLine(HelperSecretManager.GetEnvironmentVariable("us-east-1"));*/
+
 Console.WriteLine("----------------- FIN SECRETS---------");

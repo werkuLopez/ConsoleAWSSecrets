@@ -34,5 +34,12 @@ namespace ConsoleAWSSecrets.Helpers
 
             return secret;
         }
+
+        public static string GetEnvironmentVariable(string region)
+        {
+            string variables = Environment.GetEnvironmentVariable(region);
+
+            return variables;
+        }
     }
 }
